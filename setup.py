@@ -9,7 +9,7 @@ import os
 
 setup_params = dict(
     name="sqlalchemy_phoenix",
-    version='0.2.0',
+    version='0.3.0',
     description="SQLAlchemy dialect for Phoenix",
     author="Dimitri Capitaine",
     author_email="grytes29@gmail.com",
@@ -29,10 +29,11 @@ setup_params = dict(
     zip_safe=False,
     entry_points={
         "sqlalchemy.dialects":
-            ["phoenix.jaydebeapidb = sqlalchemy_phoenix.jaydebeapidb:PhoenixDialect_jaydebeapidb"]
+            ["phoenix.jaydebeapidb = sqlalchemy_phoenix.jaydebeapidb:PhoenixDialect_jaydebeapidb",
+             "phoenix = sqlalchemy_phoenix.phoenix_db:PhoenixDialect_phoenixdb"]
     },
     license="MIT",
-    install_requires=['jaydebeapi', 'sqlalchemy'],
+    install_requires=['jaydebeapi','phoenixdb','sqlalchemy'],
 )
 
 if __name__ == '__main__':
