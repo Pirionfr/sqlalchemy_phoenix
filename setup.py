@@ -29,8 +29,9 @@ setup_params = dict(
     zip_safe=False,
     entry_points={
         "sqlalchemy.dialects":
-            ["phoenix.jaydebeapidb = sqlalchemy_phoenix.jaydebeapidb:PhoenixDialect_jaydebeapidb",
-             "phoenix = sqlalchemy_phoenix.phoenix_db:PhoenixDialect_phoenixdb"]
+            ["phoenix = sqlalchemy_phoenix.phoenix_db:PhoenixDialect_phoenixdb",
+             "phoenix.jaydebeapidb = sqlalchemy_phoenix.jaydebeapidb:PhoenixDialect_jaydebeapidb",
+             "phoenix.phoenixdb = sqlalchemy_phoenix.phoenix_db:PhoenixDialect_phoenixdb"]
     },
     license="MIT",
     install_requires=['jaydebeapi','phoenixdb','sqlalchemy'],
