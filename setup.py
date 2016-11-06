@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 """
-Setup for SQLAlchemy backend for MonetDB
+Setup for SQLAlchemy backend for phoenixdb
 """
 from setuptools import find_packages, setup
-import os
 
 
 
