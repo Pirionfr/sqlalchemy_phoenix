@@ -3,6 +3,7 @@ import urlparse
 import urllib
 
 class PhoenixDialect_phoenixdb(PhoenixDialect):
+
     driver = "phoenixdb"
 
     @classmethod
