@@ -7,7 +7,7 @@ Features
 --------
 
 - Creates versions for select
-- select over queryserver with python-phoenixDB
+- select over queryserver with pyphoenix
 - select JDBC with jaydebeapidb library
 
 

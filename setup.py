@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Setup for SQLAlchemy backend for phoenixdb
+Setup for SQLAlchemy backend for pyphoenix
 """
 from setuptools import find_packages, setup
 
@@ -8,7 +8,7 @@ from setuptools import find_packages, setup
 
 setup_params = dict(
     name="sqlalchemy_phoenix",
-    version='0.3.0',
+    version='0.4.0',
     description="SQLAlchemy dialect for Phoenix",
     author="Dimitri Capitaine",
     author_email="grytes29@gmail.com",
@@ -28,12 +28,12 @@ setup_params = dict(
     zip_safe=False,
     entry_points={
         "sqlalchemy.dialects":
-            ["phoenix = sqlalchemy_phoenix.phoenix_db:PhoenixDialect_phoenixdb",
+            ["phoenix = sqlalchemy_phoenix.pyphoenix:PhoenixDialect_pyphoenix",
              "phoenix.jaydebeapidb = sqlalchemy_phoenix.jaydebeapidb:PhoenixDialect_jaydebeapidb",
-             "phoenix.phoenixdb = sqlalchemy_phoenix.phoenix_db:PhoenixDialect_phoenixdb"]
+             "phoenix.pyphoenix = sqlalchemy_phoenix.pyphoenix:PhoenixDialect_pyphoenix"]
     },
     license="MIT",
-    install_requires=['jaydebeapi','phoenixdb','sqlalchemy'],
+    install_requires=['jaydebeapi','pyphoenix','sqlalchemy'],
 )
 
 if __name__ == '__main__':

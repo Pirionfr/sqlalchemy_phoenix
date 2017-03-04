@@ -99,6 +99,6 @@ Supprimerait .idea/sqlalchemy_phoenix.iml
 Supprimerait .idea/workspace.xml
 Supprimerait sqlalchemy_phoenix/__init__.pyc
 Supprimerait sqlalchemy_phoenix/base.pyc
-Supprimerait sqlalchemy_phoenix/phoenix_db.pyc
+Supprimerait sqlalchemy_phoenix/pyphoenix.pyc
 Supprimerait sqlalchemy_phoenix/types.pyc
 Supprimerait test.py
