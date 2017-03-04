@@ -2,15 +2,15 @@ from base import PhoenixDialect
 import urlparse
 import urllib
 
-class PhoenixDialect_phoenixdb(PhoenixDialect):
+class PhoenixDialect_pyphoenix(PhoenixDialect):
 
-    driver = "phoenixdb"
+    driver = "pyphoenix"
 
     @classmethod
     def dbapi(cls):
-        import phoenixdb
+        import pyphoenix
 
-        return phoenixdb
+        return pyphoenix
 
     def create_connect_args(self, url):
         phoenix_url = urlparse.urlunsplit(urlparse.SplitResult(
